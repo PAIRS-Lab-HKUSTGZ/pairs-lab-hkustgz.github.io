@@ -1,4 +1,4 @@
-module github.com/cccignore/pairs-lab-website
+module github.com/PAIRS-Lab-HKUSTGZ/pairs-lab-hkustgz.github.io
 
 go 1.15
 
