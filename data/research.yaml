@@ -1,10 +1,10 @@
 - id: world
   number: "01"
   title: World–Physical Intelligence
-  zh_title: 复杂开放世界多传感融合与可靠移动自主系统
+  display_title: Multisensory Fusion and Reliable Mobile Autonomy in Complex Open Worlds
   full_title: Multisensory intelligence and reliable mobile autonomy in complex open worlds
   summary: We develop physical intelligence that can perceive changing environments, fuse complementary sensors, and operate reliably across open-world conditions.
-  zh_summary: 面向复杂开放世界，研究多传感融合、环境适应与可靠移动自主，让系统在真实场景和物理约束下稳定运行。
+  outcome: Reliable perception and action when scenes, weather, and task conditions change.
   goal: Reliable perception and action when scenes, weather, and task conditions change.
   keywords:
     - Multisensory Fusion
@@ -17,10 +17,10 @@
 - id: human
   number: "02"
   title: Human–Physical Intelligence
-  zh_title: 面向人机共生的通用人体运动与交互理解
+  display_title: General Human Motion and Interaction Understanding for Human–Robot Symbiosis
   full_title: General human motion and interaction understanding for human–robot symbiosis
   summary: We build general-purpose models that understand human motion, intent, and interaction context across people, environments, and tasks.
-  zh_summary: 面向人机共生，研究通用人体运动、状态与交互理解，支持物理智能系统在真实场景中安全、自然地服务与协作。
+  outcome: Understanding people, needs, and risks for safe and meaningful collaboration.
   goal: Understanding people, needs, and risks for safe and meaningful collaboration.
   keywords:
     - Human Motion
@@ -33,10 +33,10 @@
 - id: systems
   number: "03"
   title: Physical Intelligence Systems
-  zh_title: 面向长时任务的机器人移动操作与持续学习
+  display_title: Mobile Manipulation and Continual Learning for Long-Horizon Tasks
   full_title: Mobile manipulation and continual learning for long-horizon tasks
   summary: We study robots that generate data, execute long-horizon mobile manipulation, recover from failure, and improve through continual feedback.
-  zh_summary: 面向长时任务，研究机器人移动操作、数据飞轮与持续学习，使物理智能系统能够自主行动、从反馈中恢复并持续提升。
+  outcome: Long-term autonomy, failure recovery, and continual improvement in real environments.
   goal: Long-term autonomy, failure recovery, and continual improvement in real environments.
   keywords:
     - Mobile Manipulation

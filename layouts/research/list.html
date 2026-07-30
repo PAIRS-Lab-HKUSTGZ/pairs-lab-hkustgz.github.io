@@ -22,10 +22,10 @@
           and evaluate intelligent systems; and robots perceive, reason, act, and learn
           from feedback in the open world.
         </p>
-        <p class="research-vision-cn">
-          物理智能系统通过“世界感知—人体理解—系统决策—自主行动—反馈学习”持续迭代，
-          将真实世界、人类反馈、系统执行和数据积累连接起来，支撑系统在开放场景中的
-          可信赖运行与可规模化扩展。
+        <p>
+          Physical intelligence evolves through world perception, human understanding,
+          system decision, autonomous action, and feedback learning. This loop connects
+          real-world experience, human feedback, system execution, and accumulated data.
         </p>
         <p class="research-human-centered">
           Ultimately, physical intelligence should make everyday life safer, more capable,
@@ -33,10 +33,6 @@
         </p>
       </div>
       <div class="research-ecosystem reveal" aria-label="The four parts of the human-physical intelligence ecosystem">
-        <div class="ecosystem-core">
-          <span>Closed loop</span>
-          <strong>Coexist · Collaborate · Co-evolve</strong>
-        </div>
         <article class="ecosystem-node ecosystem-world">
           <span>01</span>
           <h3>World</h3>
@@ -57,6 +53,10 @@
           <h3>Data</h3>
           <p>Observations, trajectories, logs, feedback, and evaluation.</p>
         </article>
+        <div class="ecosystem-cycle">
+          <span>Closed loop</span>
+          <strong>Coexist · Collaborate · Co-evolve</strong>
+        </div>
       </div>
     </div>
   </section>
@@ -102,10 +102,10 @@
           </div>
           <div class="direction-main reveal">
             <p class="direction-label">{{ .title }}</p>
-            <h2>{{ .zh_title }}</h2>
+            <h2>{{ .display_title }}</h2>
             <p class="direction-subtitle">{{ .full_title }}</p>
             <p>{{ .summary }}</p>
-            <p class="direction-cn">{{ .zh_summary }}</p>
+            <p class="direction-outcome">{{ .outcome }}</p>
           </div>
           <div class="direction-meta reveal">
             <span>Research goal</span>
