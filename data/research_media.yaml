@@ -1,7 +1,7 @@
 - id: world
   number: "01"
   title: World–Physical Intelligence
-  media_file: ""
+  media_file: media/research/world-sensing.mp4
   poster: images/physical-ai-lab.jpg
   media_label: "Open-world sensing"
   media_alt: "A mobile robot platform in a robotics laboratory."
@@ -9,7 +9,7 @@
 - id: human
   number: "02"
   title: Human–Physical Intelligence
-  media_file: ""
+  media_file: media/research/human-interaction.mp4
   poster: images/pairs-hero-background.jpg
   media_label: "Human understanding"
   media_alt: "A researcher interacting with a robotic system."
@@ -17,7 +17,7 @@
 - id: systems
   number: "03"
   title: Physical Intelligence Systems
-  media_file: ""
+  media_file: media/research/mobile-manipulation.mp4
   poster: images/research/physical-ai-ecosystem-v2.png
   media_label: "Long-horizon autonomy"
   media_alt: "A mobile manipulator operating in a physical environment."
