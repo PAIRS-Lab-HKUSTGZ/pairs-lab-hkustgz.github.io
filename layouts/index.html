@@ -1,0 +1,113 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="hero-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">PAIRS Lab · HKUST(GZ)</div>
+        <h1>Physical AI and<br>Robotic Systems<br>Lab</h1>
+        <p class="hero-lede">
+          Towards Trustworthy and Scalable Physical AI for Human–Machine Symbiosis
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{ "research/" | relURL }}">Research</a>
+          <a class="button button-ghost" href="{{ "join/" | relURL }}">Join the Lab</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission section">
+    <div class="section-shell mission-simple reveal">
+      <h2>Physical intelligence for the real world.</h2>
+      <div class="mission-copy">
+        <p>
+          PAIRS Lab studies perception, learning, and interaction for robots and other
+          intelligent physical systems. We focus on methods that remain reliable outside
+          controlled settings.
+        </p>
+        <p>
+          Our work is grounded in real systems, public datasets, and reproducible
+          experiments across mobile autonomy, human sensing, and robot manipulation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-preview section">
+    <div class="section-shell">
+      <div class="section-heading reveal">
+        <h2>Research</h2>
+        <a class="text-link" href="{{ "research/" | relURL }}">Overview <span>↗</span></a>
+      </div>
+
+      <div class="research-bento">
+        {{ range $index, $item := site.Data.research }}
+          <article class="research-card reveal">
+            <div class="research-card-top">
+              <span>{{ $item.number }}</span>
+            </div>
+            <h3>{{ $item.title }}</h3>
+            <p>{{ $item.summary }}</p>
+            <p class="research-keywords">{{ delimit (first 3 $item.keywords) " · " }}</p>
+            <a href="{{ printf "research/#%s" $item.id | relURL }}" aria-label="Read about {{ $item.title }}">Learn more <span>↗</span></a>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="selected-work section">
+    <div class="section-shell">
+      <div class="section-heading reveal">
+        <h2>Selected publications</h2>
+        <a class="text-link" href="{{ "publications/" | relURL }}">View all <span>↗</span></a>
+      </div>
+
+      <div class="featured-publications">
+        {{ range first 4 (where site.Data.publications "featured" true) }}
+          <article class="featured-pub reveal">
+            <a class="featured-pub-image" href="{{ .project | default .paper }}" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
+              <img src="{{ .image | relURL }}" alt="" loading="lazy">
+            </a>
+            <div class="featured-pub-meta">
+              <div class="pub-overline"><span>{{ .venue }}</span><span>{{ .topic }}</span></div>
+              <h3>{{ .title }}</h3>
+              <p>{{ .authors }}</p>
+              {{ with .note }}<strong class="pub-note">{{ . }}</strong>{{ end }}
+              {{ partial "publication-links.html" . }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-news section">
+    <div class="section-shell">
+      <div class="section-heading reveal">
+        <h2>News</h2>
+      </div>
+      <div class="news-list">
+        {{ range site.Data.news }}
+          <a class="news-row reveal" href="{{ .url }}" target="_blank" rel="noreferrer">
+            <time datetime="{{ .date }}">{{ time.Format "Jan 02 · 2006" .date }}</time>
+            <span class="news-label">{{ .label }}</span>
+            <div><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+            <span class="news-arrow">↗</span>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="home-join section">
+    <div class="section-shell">
+      <div class="join-panel reveal">
+        <h2>Join PAIRS Lab</h2>
+        <div class="join-panel-copy">
+          <p>We welcome students and researchers interested in Physical AI, robotics, and real-world sensing.</p>
+          <a class="text-link" href="{{ "join/" | relURL }}">Open positions <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

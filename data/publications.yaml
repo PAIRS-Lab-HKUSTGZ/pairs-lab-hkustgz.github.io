@@ -1,0 +1,342 @@
+- key: guide
+  title: "GUIDE: Goal-Initialized Directional Understanding for End-to-End Visual Navigation"
+  authors: "Liang Wang, Jin Jin, Kanzhong Yao, Yibin Wu, Fangqiang Ding, Jin Wang, Jun Wu, Zhe Sun, Qiuguo Zhu"
+  venue: Under Review
+  year: 2026
+  kind: Preprint
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2606.10832
+  project: https://guide-navigation.github.io/
+
+- key: physion-eval
+  title: "Physion-Eval: Evaluating Physical Realism in Generated Video via Human Reasoning"
+  authors: "Qin Zhang, Peiyu Jing, Hong-Xing Yu, Fangqiang Ding, Fan Nie, Weimin Wang, Yilun Du, James Zou, Jiajun Wu, Bing Shuai"
+  venue: Under Review
+  year: 2026
+  kind: Preprint
+  topic: Scalable Robot Learning
+  paper: https://arxiv.org/pdf/2603.19607
+  project: https://huggingface.co/datasets/PhysionLabs/Physion-Eval
+
+- key: seeking-physics
+  title: Seeking Physics in Diffusion Noise
+  authors: "Chujun Tang, Lei Zhong, Fangqiang Ding"
+  venue: Under Review
+  year: 2026
+  kind: Preprint
+  topic: Scalable Robot Learning
+  paper: https://arxiv.org/pdf/2603.14294
+  project: https://thegreatestcj.github.io/Physics-in-Noise/
+
+- key: hyperdet
+  title: "HyperDet: 3D Object Detection with Hyper 4D Radar Point Clouds"
+  authors: "Yichun Xiao, Runwei Guan, Fangqiang Ding"
+  venue: Under Review
+  year: 2026
+  kind: Preprint
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2602.11554
+
+- key: wavelet-radar
+  title: Wavelet-based Multi-View Fusion of 4D Radar Tensor and Camera for Robust 3D Object Detection
+  authors: "Runwei Guan, Jianan Liu, Shaofeng Liang, Fangqiang Ding, Shanliang Yao, Xiaokai Bai, Daizong Liu, Tao Huang, Guoqiang Mao, Hui Xiong"
+  venue: Under Review
+  year: 2026
+  kind: Preprint
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2512.22972
+
+- key: radargen
+  title: "RadarGen: Automotive Radar Point Cloud Generation from Cameras"
+  authors: "Tomer Borreda, Fangqiang Ding, Sanja Fidler, Shengyu Huang, Or Litany"
+  venue: ECCV 2026
+  year: 2026
+  kind: Conference
+  topic: Scalable Robot Learning
+  paper: https://arxiv.org/pdf/2512.17897
+  project: https://radargen.github.io/
+
+- key: palm
+  title: "PALM: Progress-Aware Policy Learning via Affordance Reasoning for Long-Horizon Robotic Manipulation"
+  authors: "Yuanzhe Liu, Jingyuan Zhu, Yuchen Mo, Gen Li, Xu Cao, Jin Jin, Yifan Shen, Zhengyuan Li, Tianjiao Yu, Wenzhen Yuan, Fangqiang Ding, Ismini Lourentzou"
+  venue: CVPR 2026
+  year: 2026
+  kind: Conference
+  topic: Mobile Manipulation
+  paper: https://arxiv.org/pdf/2601.07060
+  project: https://plan-lab.github.io/palm
+
+- key: m4human
+  title: "M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction"
+  authors: "Junqiao Fan, Yunjiao Zhou, Yizhuo Yang, Xinyuan Cui, Jiarui Zhang, Lihua Xie, Jianfei Yang, Chris Xiaoxuan Lu, Fangqiang Ding"
+  venue: CVPR 2026
+  year: 2026
+  kind: Conference
+  topic: Human Motion & Interaction
+  featured: true
+  image: images/featured-m4human.jpg
+  paper: https://arxiv.org/pdf/2512.12378
+  project: https://fanjunqiao.github.io/M4Human-site/
+  code: https://github.com/FanJunqiao/M4Human
+  note: "661K frames · 20 subjects · 50 actions"
+
+- key: score-detr
+  title: "SCORE-DETR: An Efficient Transformer-based Network for Small and Occluded Citrus Detection"
+  authors: "Boyuan Zhang, Fukai Zhang, Shan An, Fangqiang Ding, Yu Liang, Qiang Lyu"
+  venue: Computers and Electronics in Agriculture
+  year: 2025
+  kind: Journal
+  topic: Reliable Mobile Autonomy
+  paper: https://doi.org/10.1016/j.compag.2025.110843
+
+- key: rss-pioneers
+  title: Robust Spatial Perception with 4D Radar for Mobile Autonomy
+  authors: Fangqiang Ding
+  venue: RSS Pioneers 2025
+  year: 2025
+  kind: Workshop
+  topic: Reliable Mobile Autonomy
+  paper: https://openreview.net/pdf?id=sBqpiose0E
+  project: https://sites.google.com/view/rsspioneers2025/participants
+  video: https://youtu.be/Ol84t57lY40
+
+- key: dexterous-survey
+  title: "Dexterous Manipulation through Imitation Learning: A Survey"
+  authors: "Shan An, Ziyu Meng, Chao Tang, Yuning Zhou, Tengyu Liu, Fangqiang Ding, Shufang Zhang, Yao Mu, Ran Song, Wei Zhang, Zeng-Guang Hou, Hong Zhang"
+  venue: IEEE Transactions on Automation Science and Engineering
+  year: 2025
+  kind: Journal
+  topic: Mobile Manipulation
+  paper: https://arxiv.org/pdf/2504.03515
+
+- key: apto
+  title: "APTO: Accelerating Serialization-Based Point Cloud Transformers with Position-Aware Pruning"
+  authors: "Qichu Sun, Rui Meng, Haishuang Fan, Fangqiang Ding, Linxi Lu, Jingya Wu, Xiaowei Li, Guihai Yan"
+  venue: ASP-DAC 2025
+  year: 2025
+  kind: Conference
+  topic: Scalable Robot Learning
+  paper: https://doi.org/10.1145/3658617.3697655
+
+- key: thermohands
+  title: "ThermoHands: A Benchmark for 3D Hand Pose Estimation from Egocentric Thermal Images"
+  authors: "Fangqiang Ding, Yunzhou Zhu, Xiangyu Wen, Gaowen Liu, Chris Xiaoxuan Lu"
+  venue: ACM SenSys 2025
+  year: 2025
+  kind: Conference
+  topic: Human Motion & Interaction
+  featured: true
+  image: images/featured-thermohands.jpg
+  paper: https://arxiv.org/pdf/2403.09871
+  project: https://thermohands.github.io/
+  code: https://github.com/LawrenceZ22/ThermoHands
+  video: https://www.youtube.com/watch?v=-oXKspAEyhg
+  note: "Thermal 3D hand pose · 28 subjects"
+
+- key: radarocc
+  title: "RadarOcc: Robust 3D Occupancy Prediction with 4D Imaging Radar"
+  authors: "Fangqiang Ding, Xiangyu Wen, Yunzhou Zhu, Yiming Li, Chris Xiaoxuan Lu"
+  venue: NeurIPS 2024
+  year: 2024
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  featured: true
+  image: images/featured-radarocc.jpg
+  paper: https://arxiv.org/pdf/2405.14014
+  project: https://toytiny.github.io/publication/24-radarocc-neurips/
+  code: https://github.com/Toytiny/RadarOcc
+  video: https://www.youtube.com/watch?v=sa4gejcWMvk
+  note: All-weather 3D occupancy prediction
+
+- key: milliflow
+  title: "milliFlow: Scene Flow Estimation on mmWave Radar Point Cloud for Human Motion Sensing"
+  authors: "Fangqiang Ding, Zhen Luo, Peijun Zhao, Chris Xiaoxuan Lu"
+  venue: ECCV 2024
+  year: 2024
+  kind: Conference
+  topic: Human Motion & Interaction
+  featured: true
+  image: images/featured-milliflow.jpg
+  paper: https://arxiv.org/pdf/2306.17010
+  code: https://github.com/Toytiny/milliFlow
+  video: https://www.youtube.com/watch?v=fa91EeueGHA
+  note: Privacy-friendly human motion sensing
+
+- key: backdraft
+  title: "Forecasting Backdraft with Multimodal Method: Fusion of Fire Image and Sensor Data"
+  authors: "Tianhang Zhang, Fangqiang Ding, Zilong Wang, Fu Xiao, Chris Xiaoxuan Lu, Xinyan Huang"
+  venue: Engineering Applications of Artificial Intelligence
+  year: 2024
+  kind: Journal
+  topic: Reliable Mobile Autonomy
+  paper: https://doi.org/10.1016/j.engappai.2024.107939
+
+- key: ratrack
+  title: "RaTrack: Moving Object Detection and Tracking with 4D Radar Point Cloud"
+  authors: "Zhijun Pan, Fangqiang Ding, Hantao Zhong, Chris Xiaoxuan Lu"
+  venue: ICRA 2024
+  year: 2024
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2309.09737
+  code: https://github.com/LJacksonPan/RaTrack
+  video: https://www.youtube.com/watch?v=IxfyCWyNhfw
+
+- key: hidden-gems
+  title: "Hidden Gems: 4D Radar Scene Flow Learning Using Cross-Modal Supervision"
+  authors: "Fangqiang Ding, Andras Palffy, Dariu M. Gavrila, Chris Xiaoxuan Lu"
+  venue: CVPR 2023
+  year: 2023
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  featured: true
+  image: images/publications/hidden-gems.jpg
+  paper: https://arxiv.org/pdf/2303.00462
+  project: https://toytiny.github.io/publication/23-cmflow-cvpr/
+  code: https://github.com/Toytiny/CMFlow
+  video: https://www.youtube.com/watch?v=PjKgznDizhI
+  note: CVPR Highlight
+
+- key: all-day-tracking
+  title: All-Day Object Tracking for Unmanned Aerial Vehicle
+  authors: "Bowen Li, Changhong Fu, Fangqiang Ding, Junjie Ye, Fuling Lin"
+  venue: IEEE Transactions on Mobile Computing
+  year: 2023
+  kind: Journal
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2101.08446
+  code: https://github.com/vision4robotics/ADTrack_v2
+  video: https://www.youtube.com/watch?v=cJMUKF4J38A
+
+- key: raflow
+  title: Self-Supervised Scene Flow Estimation with 4D Automotive Radar
+  authors: "Fangqiang Ding, Zhijun Pan, Yimin Deng, Jianning Deng, Chris Xiaoxuan Lu"
+  venue: IEEE Robotics and Automation Letters
+  year: 2022
+  kind: Journal
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2203.01137
+  project: https://toytiny.github.io/publication/22-raflow-ral/
+  code: https://github.com/Toytiny/RaFlow
+  video: https://www.youtube.com/watch?v=5_iJCZytrxo
+
+- key: mrcf
+  title: Multi-Regularized Correlation Filter for UAV Tracking and Self-Localization
+  authors: "Junjie Ye, Changhong Fu, Fuling Lin, Fangqiang Ding, Shan An, Geng Lu"
+  venue: IEEE Transactions on Industrial Electronics
+  year: 2022
+  kind: Journal
+  topic: Reliable Mobile Autonomy
+  paper: https://ieeexplore.ieee.org/document/9457090
+  code: https://github.com/vision4robotics/MRCF-Tracker
+  video: https://www.youtube.com/watch?v=XzkreAPynE4
+
+- key: ad2attack
+  title: "Ad2Attack: Adaptive Adversarial Attack on Real-Time UAV Tracking"
+  authors: "Changhong Fu, Sihang Li, Xinnan Yuan, Junjie Ye, Ziang Cao, Fangqiang Ding"
+  venue: ICRA 2022
+  year: 2022
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2203.01516
+  code: https://github.com/vision4robotics/Ad2Attack
+  video: https://www.bilibili.com/video/BV1S44y1b7xC/
+
+- key: dcf-review
+  title: "Correlation Filters for Unmanned Aerial Vehicle-Based Aerial Tracking: A Review and Experimental Evaluation"
+  authors: "Changhong Fu, Bowen Li, Fangqiang Ding, Fuling Lin, Geng Lu"
+  venue: IEEE Geoscience and Remote Sensing Magazine
+  year: 2022
+  kind: Journal
+  topic: Reliable Mobile Autonomy
+  paper: https://ieeexplore.ieee.org/document/9445732
+  code: https://github.com/vision4robotics/DCFTracking4UAV
+  video: https://www.youtube.com/watch?v=LPdmTjt5Nv0
+
+- key: dynamic-regression
+  title: Learning Dynamic Regression with Automatic Distractor Repression for Real-Time UAV Tracking
+  authors: "Changhong Fu, Fangqiang Ding, Yiming Li, Jin Jin, Chen Feng"
+  venue: Engineering Applications of Artificial Intelligence
+  year: 2021
+  kind: Journal
+  topic: Reliable Mobile Autonomy
+  paper: https://doi.org/10.1016/j.engappai.2020.104116
+  code: https://github.com/vision4robotics/DR2Track/tree/master/DR2Track2
+  video: https://www.youtube.com/watch?v=49ko4Roexsw
+
+- key: adtrack
+  title: "ADTrack: Target-Aware Dual Filter Learning for Real-Time Anti-Dark UAV Tracking"
+  authors: "Bowen Li, Changhong Fu, Fangqiang Ding, Junjie Ye, Fuling Lin"
+  venue: ICRA 2021
+  year: 2021
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2106.02495
+  code: https://github.com/vision4robotics/ADTrack
+  video: https://www.youtube.com/watch?v=8ZnGOwoqDZ8
+
+- key: srecf
+  title: "Spatial Reliability Enhanced Correlation Filter: An Efficient Approach for Real-Time UAV Tracking"
+  authors: "Changhong Fu, Jin Jin, Fangqiang Ding, Yiming Li, Geng Lu"
+  venue: IEEE Transactions on Multimedia
+  year: 2021
+  kind: Journal
+  topic: Reliable Mobile Autonomy
+  paper: https://ieeexplore.ieee.org/document/9565346
+  code: https://github.com/vision4robotics/SRECF-Tracker/tree/master/SRECF%20(TMM)
+  video: https://www.youtube.com/watch?v=4EaLxvz8_Sw
+
+- key: mscf
+  title: Mutation Sensitive Correlation Filter for Real-Time UAV Tracking with Adaptive Hybrid Label
+  authors: "Guangze Zheng, Changhong Fu, Junjie Ye, Fuling Lin, Fangqiang Ding"
+  venue: ICRA 2021
+  year: 2021
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2106.08073
+  code: https://github.com/vision4robotics/MSCF-tracker
+  video: https://www.youtube.com/watch?v=4EPGBCuatxU
+
+- key: autotrack
+  title: "AutoTrack: Towards High-Performance Visual Tracking for UAV with Automatic Spatio-Temporal Regularization"
+  authors: "Yiming Li, Changhong Fu, Fangqiang Ding, Ziyuan Huang, Geng Lu"
+  venue: CVPR 2020
+  year: 2020
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  paper: https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_AutoTrack_Towards_High-Performance_Visual_Tracking_for_UAV_With_Automatic_Spatio-Temporal_CVPR_2020_paper.pdf
+  code: https://github.com/vision4robotics/AutoTrack
+  video: https://www.youtube.com/watch?v=2w8Mophui1k
+
+- key: jsar
+  title: Automatic Failure Recovery and Re-Initialization for Online UAV Tracking with Joint Scale and Aspect Ratio Optimization
+  authors: "Fangqiang Ding, Changhong Fu, Yiming Li, Jin Jin, Chen Feng"
+  venue: IROS 2020
+  year: 2020
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2008.03915
+  code: https://github.com/vision4robotics/JSAR-Tracker
+  video: https://www.youtube.com/watch?v=wNFhkpH6osk
+
+- key: dr2track
+  title: "DR2Track: Towards Real-Time Visual Tracking for UAV via Distractor Repressed Dynamic Regression"
+  authors: "Changhong Fu, Fangqiang Ding, Yiming Li, Jin Jin, Chen Feng"
+  venue: IROS 2020
+  year: 2020
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/2008.03912
+  code: https://github.com/vision4robotics/DR2Track/tree/master/DR2Track1
+  video: https://www.youtube.com/watch?v=HQz_xIu9XOc
+
+- key: amcf
+  title: Augmented Memory for Correlation Filters in Real-Time UAV Tracking
+  authors: "Yiming Li, Changhong Fu, Fangqiang Ding, Ziyuan Huang, Jia Pan"
+  venue: IROS 2020
+  year: 2020
+  kind: Conference
+  topic: Reliable Mobile Autonomy
+  paper: https://arxiv.org/pdf/1909.10989
+  code: https://github.com/vision4robotics/AMCF-tracker
+  video: https://www.youtube.com/watch?v=CGH5o2J1ohI

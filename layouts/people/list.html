@@ -1,0 +1,76 @@
+{{ define "main" }}
+  <section class="page-hero page-hero-people">
+    <div class="page-shell">
+      <h1>People</h1>
+      <div class="page-intro">
+        <p>Meet the people working on Physical AI and robotic systems at PAIRS Lab.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="people-section section">
+    <div class="section-shell">
+      <div class="people-heading reveal">
+        <span class="section-kicker">Principal investigator</span>
+      </div>
+      {{ range site.Data.people }}
+        <article class="pi-profile">
+          <div class="pi-image reveal">
+            <div class="pi-image-frame"><img src="{{ .image | relURL }}" alt="{{ .name }}" loading="eager"></div>
+          </div>
+          <div class="pi-copy reveal">
+            <span class="pi-role">{{ .role }}</span>
+            <h2>{{ .name }}</h2>
+            <p class="pi-position">{{ .position }}<br>{{ .affiliation }}</p>
+            <p class="pi-bio">{{ .bio }}</p>
+            <div class="pi-background">
+              {{ range .background }}
+                <div class="pi-background-row">
+                  <span>{{ .label }}</span>
+                  <p>{{ .detail }}</p>
+                </div>
+              {{ end }}
+            </div>
+            <div class="pi-links">
+              {{ range .links }}<a href="{{ .url }}" target="_blank" rel="noreferrer">{{ .label }} ↗</a>{{ end }}
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="member-groups-section section">
+    <div class="section-shell">
+      {{ range site.Data.team_groups }}
+        <section class="member-category">
+          <div class="member-category-heading">
+            <div>
+              <span class="section-kicker">{{ .label }}</span>
+              <h2>{{ .title }}</h2>
+            </div>
+            {{ if .members }}<span>{{ len .members }} members</span>{{ end }}
+          </div>
+          {{ if .members }}
+            <div class="member-grid">
+              {{ range .members }}
+                <article class="member-card">
+                  <div class="member-photo">
+                    <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
+                  </div>
+                  <h3>{{ .name }}</h3>
+                  <div class="member-links">
+                    {{ with .email }}<a href="mailto:{{ . }}">Email</a>{{ end }}
+                    {{ with .website }}<a href="{{ . }}" target="_blank" rel="noreferrer">Website ↗</a>{{ end }}
+                  </div>
+                </article>
+              {{ end }}
+            </div>
+          {{ else }}
+            <p class="member-empty">Members will be announced here.</p>
+          {{ end }}
+        </section>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

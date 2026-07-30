@@ -1,0 +1,55 @@
+- id: autonomy
+  number: "01"
+  title: Reliable Mobile Autonomy
+  full_title: Multisensory intelligence for reliable mobile autonomous systems
+  summary: We combine radar, vision, geometry, and learning to help mobile systems perceive and navigate safely beyond ideal conditions.
+  question: How can an autonomous system remain dependable when visibility, weather, and environments change?
+  keywords:
+    - 4D Radar
+    - Multimodal Perception
+    - Navigation
+    - Autonomous Vehicles
+  featured_work: RadarOcc
+  accent: cyan
+
+- id: human
+  number: "02"
+  title: Human Motion & Interaction
+  full_title: Generalized and non-intrusive human motion and interaction understanding
+  summary: We develop privacy-aware sensing that understands people, motion, and interaction without relying on fragile RGB-only pipelines.
+  question: How can Physical AI understand people accurately while respecting privacy and real-world constraints?
+  keywords:
+    - Human Sensing
+    - mmWave Radar
+    - Thermal Vision
+    - Human-Robot Interaction
+  featured_work: M4Human
+  accent: orange
+
+- id: manipulation
+  number: "03"
+  title: Mobile Manipulation
+  full_title: Long-horizon and self-improving mobile manipulation across scenarios
+  summary: We study robots that reason about affordances, compose long tasks, recover from change, and improve through experience.
+  question: How can robots act over long horizons instead of solving one isolated skill at a time?
+  keywords:
+    - Long-Horizon Tasks
+    - Affordance Reasoning
+    - VLA
+    - Humanoid Robots
+  featured_work: PALM
+  accent: lime
+
+- id: learning
+  number: "04"
+  title: Scalable Robot Learning
+  full_title: Multimodal data and scene synthesis for scalable robot learning
+  summary: We build data, benchmarks, simulation, and generative methods that make robot learning broader and more resource-efficient.
+  question: How can Physical AI learn at scale when real-world data is expensive, sparse, or unsafe to collect?
+  keywords:
+    - World Models
+    - Data Synthesis
+    - Video Generation
+    - Foundation Models
+  featured_work: Physion-Eval
+  accent: violet

@@ -1,0 +1,24 @@
+- name: Fangqiang Ding
+  role: Principal Investigator
+  position: Tenure-Track Assistant Professor
+  affiliation: Robotics and Autonomous Systems Thrust, Systems Hub, HKUST(GZ)
+  image: images/prof_pic-optimized.jpg
+  bio: Fangqiang Ding works at the intersection of robotics, computer vision, machine learning, and sensing. His research develops trustworthy and scalable Physical AI systems that operate robustly in the real world and support long-term human-machine symbiosis.
+  background:
+    - label: Experience
+      detail: Postdoctoral Associate, Massachusetts Institute of Technology (MIT), working with Dr. Hermano Igo Krebs
+    - label: Education
+      detail: Ph.D. in Robotics and Autonomous Systems, University of Edinburgh
+    - label: Education
+      detail: B.Eng. in Mechanical Engineering, Tongji University
+  links:
+    - label: Email
+      url: mailto:fangqiangd@hkust-gz.edu.cn
+    - label: Personal Site
+      url: https://toytiny.github.io/
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=Ja8dgh8AAAAJ
+    - label: GitHub
+      url: https://github.com/Toytiny
+    - label: ORCID
+      url: https://orcid.org/0000-0001-5287-7128

@@ -1,0 +1,29 @@
+<header class="site-header" data-header>
+  <div class="header-shell">
+    <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="PAIRS Lab home">
+      <img class="brand-mark" src="{{ "images/pairs-mark-header.png" | relURL }}" alt="">
+      <span class="brand-copy">
+        <strong>PAIRS Lab</strong>
+        <small>Physical AI &amp; Robotic Systems</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
+      <span></span><span></span>
+      <span class="sr-only" aria-hidden="true">Open navigation</span>
+    </button>
+
+    <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-nav>
+      {{ $current := .RelPermalink }}
+      {{ range site.Menus.main }}
+        {{ $target := .URL | relURL }}
+        <a href="{{ $target }}" class="{{ if or (and $.IsHome (eq .URL "/")) (and (ne .URL "/") (hasPrefix $current $target)) }}is-active{{ end }}">
+          {{ .Name }}
+        </a>
+      {{ end }}
+      <a class="institution-logo" href="https://www.hkust-gz.edu.cn/" target="_blank" rel="noreferrer" aria-label="The Hong Kong University of Science and Technology (Guangzhou)">
+        <img src="{{ "images/hkustgz-logo-white.png" | relURL }}" alt="HKUST(GZ)">
+      </a>
+    </nav>
+  </div>
+</header>
