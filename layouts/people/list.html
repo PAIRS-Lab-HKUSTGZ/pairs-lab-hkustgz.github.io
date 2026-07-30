@@ -14,13 +14,16 @@
         <span class="section-kicker">Principal investigator</span>
       </div>
       {{ range site.Data.people }}
+        {{ $person := . }}
         <article class="pi-profile">
           <div class="pi-image reveal">
-            <div class="pi-image-frame"><img src="{{ .image | relURL }}" alt="{{ .name }}" loading="eager"></div>
+            {{ with .slug }}<a class="pi-image-frame" href="{{ printf "people/%s/" . | relURL }}" aria-label="View {{ $person.name }}'s profile">{{ else }}<div class="pi-image-frame">{{ end }}
+              <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="eager">
+            {{ with .slug }}</a>{{ else }}</div>{{ end }}
           </div>
           <div class="pi-copy reveal">
             <span class="pi-role">{{ .role }}</span>
-            <h2>{{ .name }}</h2>
+            <h2>{{ with .slug }}<a href="{{ printf "people/%s/" . | relURL }}">{{ $person.name }}</a>{{ else }}{{ $person.name }}{{ end }}</h2>
             <p class="pi-position">{{ .position }}<br>{{ .affiliation }}</p>
             <p class="pi-bio">{{ .bio }}</p>
             <div class="pi-background">
@@ -32,6 +35,7 @@
               {{ end }}
             </div>
             <div class="pi-links">
+              {{ with .slug }}<a class="pi-profile-link" href="{{ printf "people/%s/" . | relURL }}">Full profile <span aria-hidden="true">→</span></a>{{ end }}
               {{ range .links }}<a href="{{ .url }}" target="_blank" rel="noreferrer">{{ .label }} ↗</a>{{ end }}
             </div>
           </div>

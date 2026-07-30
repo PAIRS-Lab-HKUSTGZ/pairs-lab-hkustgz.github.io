@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <section class="member-simple-profile">
+    <div class="section-shell member-simple-grid">
+      <aside class="member-simple-identity">
+        <div class="member-simple-photo">
+          <img src="{{ .Params.image | relURL }}" alt="Portrait of {{ .Title }}" loading="eager">
+        </div>
+        <h1>{{ .Title }}</h1>
+        <p class="member-simple-position">{{ .Params.position }}<br>{{ .Params.affiliation }}</p>
+        <nav class="member-simple-links" aria-label="Profile links">
+          {{ range .Params.links }}
+            <a href="{{ .url }}" aria-label="{{ .label }}" title="{{ .label }}"{{ if not (hasPrefix .url "mailto:") }} target="_blank" rel="noreferrer"{{ end }}>
+              {{ if eq .label "Email" }}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 7 8 6 8-6"/></svg>
+              {{ else if eq .label "Personal site" }}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21M12 3c-2.4 2.5-3.6 5.5-3.6 9S9.6 18.5 12 21"/></svg>
+              {{ else if eq .label "Google Scholar" }}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5Z"/><path d="M6.5 11.2v4.6c3.5 2.7 7.5 2.7 11 0v-4.6M21 9v6"/></svg>
+              {{ else if eq .label "GitHub" }}
+                <svg class="member-github-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .8.1-.7.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5a4 4 0 0 1 1.1-2.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.9 1.1a10 10 0 0 1 5.2 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.4.1 2.7a4 4 0 0 1 1.1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z"/></svg>
+              {{ else }}
+                <svg class="member-orcid-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><text x="6.1" y="15.2">iD</text></svg>
+              {{ end }}
+              <span class="sr-only">{{ .label }}</span>
+            </a>
+          {{ end }}
+        </nav>
+      </aside>
+
+      <div class="member-simple-content">
+        <div class="member-simple-biography">{{ .Content }}</div>
+
+        {{ with .Params.research_interests }}
+          <section class="member-simple-interests">
+            <h2>Interests</h2>
+            <ul>
+              {{ range . }}<li>{{ .title }}</li>{{ end }}
+            </ul>
+          </section>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
