@@ -24,7 +24,9 @@ Open `http://localhost:1313/`.
 - Research directions: `data/research.yaml`
 - Publications: `data/publications.yaml`
 - People: `data/people.yaml`
-- PhD, MPhil, and RA profiles: `data/team_groups.yaml`
+- PI directory data: `data/people.yaml`
+- PhD, MPhil, and RA profiles: one page bundle per member under `content/people/`
+- Shareable member submission package: `member-profile-template/`
 - News: `data/news.yaml`
 - Recruitment copy: `layouts/join/list.html`
 - Homepage: `layouts/index.html`

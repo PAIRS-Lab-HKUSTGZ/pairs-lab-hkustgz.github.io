@@ -1,4 +1,5 @@
 {{ define "main" }}
+  {{ $peoplePage := . }}
   <section class="page-hero page-hero-people">
     <div class="page-shell">
       <h1>People</h1>
@@ -13,60 +14,66 @@
       <div class="people-heading reveal">
         <span class="section-kicker">Principal investigator</span>
       </div>
-      {{ range site.Data.people }}
-        {{ $person := . }}
-        <article class="pi-profile">
-          <div class="pi-image reveal">
-            {{ with .slug }}<a class="pi-image-frame" href="{{ printf "people/%s/" . | relURL }}" aria-label="View {{ $person.name }}'s profile">{{ else }}<div class="pi-image-frame">{{ end }}
-              <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="eager">
-            {{ with .slug }}</a>{{ else }}</div>{{ end }}
-          </div>
-          <div class="pi-copy reveal">
-            <span class="pi-role">{{ .role }}</span>
-            <h2>{{ with .slug }}<a href="{{ printf "people/%s/" . | relURL }}">{{ $person.name }}</a>{{ else }}{{ $person.name }}{{ end }}</h2>
-            <p class="pi-position">{{ .position }}<br>{{ .affiliation }}</p>
-            <p class="pi-bio">{{ .bio }}</p>
-            <div class="pi-background">
-              {{ range .background }}
-                <div class="pi-background-row">
-                  <span>{{ .label }}</span>
-                  <p>{{ .detail }}</p>
-                </div>
-              {{ end }}
+      <div class="people-pi-list">
+        {{ range site.Data.people }}
+          {{ $person := . }}
+          <article class="people-pi-card reveal">
+            {{ with .slug }}
+              <a class="people-pi-photo" href="{{ printf "people/%s/" . | relURL }}" aria-label="View {{ $person.name }}'s profile">
+                <img src="{{ $person.image | relURL }}" alt="{{ $person.name }}" loading="eager">
+              </a>
+            {{ else }}
+              <div class="people-pi-photo"><img src="{{ .image | relURL }}" alt="{{ .name }}" loading="eager"></div>
+            {{ end }}
+            <div class="people-pi-copy">
+              <span class="pi-role">{{ .role }}</span>
+              <h2>{{ with .slug }}<a href="{{ printf "people/%s/" . | relURL }}">{{ $person.name }}</a>{{ else }}{{ $person.name }}{{ end }}</h2>
+              <p class="people-pi-position"><strong>{{ .position }}</strong><span>{{ .affiliation }}</span></p>
+              {{ with .bio }}<p class="people-pi-bio">{{ . }}</p>{{ end }}
+              {{ with .slug }}<a class="people-profile-link" href="{{ printf "people/%s/" . | relURL }}">View profile <span aria-hidden="true">→</span></a>{{ end }}
             </div>
-            <div class="pi-links">
-              {{ with .slug }}<a class="pi-profile-link" href="{{ printf "people/%s/" . | relURL }}">Full profile <span aria-hidden="true">→</span></a>{{ end }}
-              {{ range .links }}<a href="{{ .url }}" target="_blank" rel="noreferrer">{{ .label }} ↗</a>{{ end }}
-            </div>
-          </div>
-        </article>
-      {{ end }}
+          </article>
+        {{ end }}
+      </div>
     </div>
   </section>
 
   <section class="member-groups-section section">
     <div class="section-shell">
       {{ range site.Data.team_groups }}
+        {{ $members := where $peoplePage.RegularPages "Params.group" .key }}
+        {{ $members = $members.ByWeight }}
         <section class="member-category">
           <div class="member-category-heading">
             <div>
               <span class="section-kicker">{{ .label }}</span>
               <h2>{{ .title }}</h2>
             </div>
-            {{ if .members }}<span>{{ len .members }} members</span>{{ end }}
+            {{ if $members }}<span>{{ len $members }} {{ if eq (len $members) 1 }}member{{ else }}members{{ end }}</span>{{ end }}
           </div>
-          {{ if .members }}
+          {{ if $members }}
             <div class="member-grid">
-              {{ range .members }}
+              {{ range $members }}
+                {{ $member := . }}
+                {{ $imageURL := partial "member-image.html" (dict "page" . "src" .Params.image) }}
                 <article class="member-card">
-                  <div class="member-photo">
-                    <img src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy">
-                  </div>
-                  <h3>{{ .name }}</h3>
-                  <div class="member-links">
-                    {{ with .email }}<a href="mailto:{{ . }}">Email</a>{{ end }}
-                    {{ with .website }}<a href="{{ . }}" target="_blank" rel="noreferrer">Website ↗</a>{{ end }}
-                  </div>
+                  <a class="member-card-link" href="{{ .RelPermalink }}" aria-label="View {{ .Title }}'s profile">
+                    <div class="member-photo">
+                      <img src="{{ $imageURL }}" alt="{{ .Title }}" loading="lazy">
+                    </div>
+                    <h3>{{ .Title }}</h3>
+                    {{ with .Params.institution }}
+                      <p class="member-origin">from <span>{{ . }}</span></p>
+                    {{ else }}
+                      {{ with .Params.position }}<p class="member-position">{{ . }}</p>{{ end }}
+                      {{ with .Params.affiliation }}<p class="member-affiliation">{{ . }}</p>{{ end }}
+                    {{ end }}
+                    {{ if or .Params.period .Params.card_interests }}
+                      <p class="member-profile-summary">
+                        {{ with .Params.period }}{{ . }}{{ end }}{{ if and .Params.period .Params.card_interests }}: {{ end }}{{ range $index, $interest := .Params.card_interests }}{{ if $index }}, {{ end }}{{ $interest }}{{ end }}
+                      </p>
+                    {{ end }}
+                  </a>
                 </article>
               {{ end }}
             </div>

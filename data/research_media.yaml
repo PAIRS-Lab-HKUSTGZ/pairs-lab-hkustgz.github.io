@@ -1,10 +1,10 @@
 - id: world
   number: "01"
   title: World–Physical Intelligence
-  media_file: media/research/world-sensing.mp4
+  media_file: media/research/world-sensing-seedance-v2.mp4
   poster: images/physical-ai-lab.jpg
   media_label: "Open-world sensing"
-  media_alt: "A mobile robot platform in a robotics laboratory."
+  media_alt: "A mobile robot navigating mud, fog, rain, and obstacles in a severe outdoor environment."
 
 - id: human
   number: "02"

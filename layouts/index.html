@@ -1,5 +1,6 @@
 {{ define "main" }}
   <section class="hero">
+    <div class="hero-signal-lines" aria-hidden="true"></div>
     <div class="hero-shell">
       <div class="hero-copy reveal">
         <div class="eyebrow">PAIRS Lab · HKUST(GZ)</div>
@@ -13,9 +14,12 @@
         </div>
       </div>
     </div>
+    <a class="hero-scroll-cue" href="#home-introduction" aria-label="Continue to the introduction">
+      <span></span>
+    </a>
   </section>
 
-  <section class="mission section">
+  <section class="mission section" id="home-introduction">
     <div class="section-shell mission-simple reveal">
       <h2>Physical intelligence for the real world.</h2>
       <div class="mission-copy">
@@ -54,11 +58,6 @@
               {{ else }}
                 <img class="research-media-video research-media-image" src="{{ $media.poster | relURL }}" alt="{{ $media.media_alt }}" loading="lazy">
               {{ end }}
-              <div class="research-media-overlay">
-                <span class="research-media-index">{{ $media.number }}</span>
-                <span class="research-media-status">Media slot</span>
-                <span class="research-media-play" aria-hidden="true">▶</span>
-              </div>
             </div>
             <div class="research-media-copy">
               <p class="research-media-label">{{ $media.media_label }}</p>

@@ -1,5 +1,6 @@
 ---
 title: Fangqiang Ding
+layout: pi
 description: Fangqiang Ding is the Principal Investigator of PAIRS Lab at HKUST(GZ).
 role: Principal Investigator
 position: Tenure-Track Assistant Professor
@@ -42,3 +43,5 @@ selected_publications:
 ---
 
 Fangqiang Ding works at the intersection of robotics, computer vision, machine learning, and sensing. His research develops trustworthy and scalable Physical AI systems that operate robustly in the real world and support long-term human–machine symbiosis.
+
+Before joining HKUST(GZ), he was a Postdoctoral Associate at the Massachusetts Institute of Technology (MIT), working with Dr. Hermano Igo Krebs. He received his Ph.D. in Robotics and Autonomous Systems from the University of Edinburgh and his B.Eng. in Mechanical Engineering from Tongji University.

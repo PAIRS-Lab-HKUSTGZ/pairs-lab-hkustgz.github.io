@@ -1,0 +1,7 @@
+{{- $page := .page -}}
+{{- $src := .src -}}
+{{- with $page.Resources.GetMatch $src -}}
+  {{- .RelPermalink -}}
+{{- else -}}
+  {{- $src | relURL -}}
+{{- end -}}

@@ -1,0 +1,40 @@
+{{ define "main" }}
+  <div class="pi-page">
+    <article class="pi-page-shell">
+      <div class="pi-page-main">
+        <section class="pi-page-overview">
+          <div class="pi-page-photo">
+            <img src="{{ .Params.image | relURL }}" alt="Portrait of {{ .Title }}" loading="eager">
+          </div>
+          <div class="pi-page-details">
+            <h2>Dr. {{ .Title }}</h2>
+            <strong>{{ .Params.position }}</strong>
+            <p>{{ .Params.affiliation }}</p>
+            <dl>
+              {{ with .Params.office }}<div><dt>Office</dt><dd>{{ . }}</dd></div>{{ end }}
+              {{ with .Params.email }}<div><dt>Email</dt><dd><a href="mailto:{{ . }}">{{ . }}</a></dd></div>{{ end }}
+            </dl>
+            {{ partial "profile-links.html" .Params.links }}
+          </div>
+        </section>
+
+        <section class="pi-page-section" id="about">
+          <h2>About Me</h2>
+          <div class="pi-page-prose">{{ .Content }}</div>
+        </section>
+
+        <section class="pi-page-section" id="research-interests">
+          <h2>Research Interests</h2>
+          <div class="pi-page-research-list">
+            {{ range .Params.research_interests }}
+              <div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .detail }}</p>
+              </div>
+            {{ end }}
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+{{ end }}

@@ -1,11 +1,11 @@
 - label: Doctoral researchers
+  key: phd
   title: PhD Students
-  members: []
 
 - label: Research postgraduates
+  key: mphil
   title: MPhil Students
-  members: []
 
 - label: Research staff
+  key: ra
   title: Research Assistants
-  members: []
