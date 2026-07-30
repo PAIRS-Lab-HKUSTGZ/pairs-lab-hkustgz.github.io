@@ -10,7 +10,6 @@
     - Multisensory Fusion
     - Reliable Autonomy
     - Open-World Perception
-  featured_work: RadarOcc
   publication_topic: Reliable Mobile Autonomy
   accent: blue
 
@@ -26,7 +25,6 @@
     - Human Motion
     - Interaction Understanding
     - Safe Collaboration
-  featured_work: M4Human
   publication_topic: Human Motion & Interaction
   accent: green
 
@@ -42,6 +40,5 @@
     - Mobile Manipulation
     - Long-Horizon Tasks
     - Continual Learning
-  featured_work: PALM
   publication_topic: Mobile Manipulation
   accent: orange

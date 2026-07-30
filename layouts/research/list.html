@@ -14,28 +14,33 @@
     <div class="section-shell research-vision-grid">
       <div class="research-vision-copy reveal">
         <p class="section-kicker">A closed-loop ecosystem</p>
-        <h2>World, people, systems, and data — connected through physical action.</h2>
+        <h2>World, people, systems, and data — one loop.</h2>
         <p>
-          Our long-term vision is an ecosystem in which the real world, people, physical
-          intelligence systems, and data form a reliable closed loop. The world provides
-          the environments, tasks, and physical constraints; people guide, interact with,
-          and evaluate intelligent systems; and robots perceive, reason, act, and learn
-          from feedback in the open world.
-        </p>
-        <p>
-          Physical intelligence evolves through world perception, human understanding,
-          system decision, autonomous action, and feedback learning. This loop connects
-          real-world experience, human feedback, system execution, and accumulated data.
+          We study physical intelligence as a living loop: the world provides constraints,
+          people provide goals and feedback, and intelligent systems perceive, decide, act,
+          and learn through real experience.
         </p>
         <p class="research-human-centered">
-          Ultimately, physical intelligence should make everyday life safer, more capable,
-          and more humane for everyone.
+          The aim is simple: make life safer, more capable, and more humane for everyone.
         </p>
       </div>
-      <figure class="research-ecosystem-visual reveal">
-        <img src="{{ "images/research/physical-ai-ecosystem.png" | relURL }}" alt="A mobile manipulation robot connecting the real world, people, and data." loading="eager">
-        <figcaption>Physical intelligence connecting the world, people, systems, and data.</figcaption>
-      </figure>
+      <div class="research-ecosystem-visual ecosystem-map reveal" role="img" aria-label="A closed loop connecting the world, people, physical intelligence systems, and data.">
+        <svg class="ecosystem-map-lines" viewBox="0 0 640 440" aria-hidden="true">
+          <path d="M170 116C264 48 369 48 470 116"/>
+          <path d="M520 165C583 235 558 306 490 350"/>
+          <path d="M426 390C325 425 219 421 132 360"/>
+          <path d="M87 310C28 243 48 175 111 131"/>
+          <path class="ecosystem-map-arrow arrow-one" d="m458 108 17 8-12 13"/>
+          <path class="ecosystem-map-arrow arrow-two" d="m490 332 6 18-18-2"/>
+          <path class="ecosystem-map-arrow arrow-three" d="m150 354-18 7 3-18"/>
+          <path class="ecosystem-map-arrow arrow-four" d="m103 147-15-11 17-6"/>
+        </svg>
+        <div class="ecosystem-node ecosystem-node-world"><span>01</span><strong>World</strong><small>Scenes · tasks · constraints</small></div>
+        <div class="ecosystem-node ecosystem-node-people"><span>02</span><strong>People</strong><small>Goals · feedback · trust</small></div>
+        <div class="ecosystem-node ecosystem-node-systems"><span>03</span><strong>Physical systems</strong><small>Perceive · decide · act</small></div>
+        <div class="ecosystem-node ecosystem-node-data"><span>04</span><strong>Data</strong><small>Experience · learning · scale</small></div>
+        <div class="ecosystem-map-center"><span>PAIRS</span><strong>co-evolution</strong></div>
+      </div>
     </div>
   </section>
 
@@ -46,7 +51,7 @@
           <p class="section-kicker">The research loop</p>
           <h2>From perception to continual learning.</h2>
         </div>
-        <p>Reliable systems improve by closing the loop between real-world experience and data.</p>
+        <p>Reliable systems improve by closing the loop between experience and action.</p>
       </div>
       <div class="research-loop research-loop-five" aria-label="World perception to feedback learning loop">
         <div><span>01</span><strong>World perception</strong><small>Sense the environment</small></div>
@@ -67,9 +72,9 @@
       <div class="section-heading research-themes-heading reveal">
         <div>
           <p class="section-kicker">Future research themes</p>
-          <h2>Three directions toward human–physical intelligence symbiosis.</h2>
+          <h2>Three directions, one shared goal.</h2>
         </div>
-        <p>Each direction studies one part of the same closed-loop ecosystem.</p>
+        <p>Each direction advances one part of the same ecosystem.</p>
       </div>
 
       {{ range site.Data.research }}
@@ -81,9 +86,7 @@
           <div class="direction-main reveal">
             <p class="direction-label">{{ .title }}</p>
             <h2>{{ .display_title }}</h2>
-            <p class="direction-subtitle">{{ .full_title }}</p>
             <p>{{ .summary }}</p>
-            <p class="direction-outcome">{{ .outcome }}</p>
           </div>
           <div class="direction-meta reveal">
             <span>Research goal</span>
