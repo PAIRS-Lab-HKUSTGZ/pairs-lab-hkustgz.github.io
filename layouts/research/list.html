@@ -1,31 +1,120 @@
 {{ define "main" }}
-  <section class="page-hero page-hero-research">
+  <section class="page-hero page-hero-research research-vision-hero">
     <div class="page-hero-grid" aria-hidden="true"></div>
     <div class="page-shell">
-      <h1>Research</h1>
+      <p class="research-eyebrow">Long-term vision</p>
+      <h1>Human–Physical<br>Intelligence Symbiosis</h1>
       <div class="page-intro">
-        <p>Our research connects multisensory perception, human understanding, robot manipulation, and scalable learning.</p>
+        <p>Building a world where people and physical intelligence systems can coexist, collaborate, and co-evolve.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-vision section">
+    <div class="section-shell research-vision-grid">
+      <div class="research-vision-copy reveal">
+        <p class="section-kicker">A closed-loop ecosystem</p>
+        <h2>World, people, systems, and data — connected through physical action.</h2>
+        <p>
+          Our long-term vision is an ecosystem in which the real world, people, physical
+          intelligence systems, and data form a reliable closed loop. The world provides
+          the environments, tasks, and physical constraints; people guide, interact with,
+          and evaluate intelligent systems; and robots perceive, reason, act, and learn
+          from feedback in the open world.
+        </p>
+        <p class="research-vision-cn">
+          物理智能系统通过“世界感知—人体理解—系统决策—自主行动—反馈学习”持续迭代，
+          将真实世界、人类反馈、系统执行和数据积累连接起来，支撑系统在开放场景中的
+          可信赖运行与可规模化扩展。
+        </p>
+        <p class="research-human-centered">
+          Ultimately, physical intelligence should make everyday life safer, more capable,
+          and more humane for everyone.
+        </p>
+      </div>
+      <div class="research-ecosystem reveal" aria-label="The four parts of the human-physical intelligence ecosystem">
+        <div class="ecosystem-core">
+          <span>Closed loop</span>
+          <strong>Coexist · Collaborate · Co-evolve</strong>
+        </div>
+        <article class="ecosystem-node ecosystem-world">
+          <span>01</span>
+          <h3>World</h3>
+          <p>Environment, scenes, tasks, and physical constraints.</p>
+        </article>
+        <article class="ecosystem-node ecosystem-human">
+          <span>02</span>
+          <h3>People</h3>
+          <p>Needs, demonstrations, interaction, feedback, and evaluation.</p>
+        </article>
+        <article class="ecosystem-node ecosystem-system">
+          <span>03</span>
+          <h3>Physical intelligence</h3>
+          <p>Perception, understanding, decision, action, and learning.</p>
+        </article>
+        <article class="ecosystem-node ecosystem-data">
+          <span>04</span>
+          <h3>Data</h3>
+          <p>Observations, trajectories, logs, feedback, and evaluation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-loop-section">
+    <div class="section-shell">
+      <div class="section-heading research-loop-heading reveal">
+        <div>
+          <p class="section-kicker">The research loop</p>
+          <h2>From perception to continual learning.</h2>
+        </div>
+        <p>Reliable systems improve by closing the loop between real-world experience and data.</p>
+      </div>
+      <div class="research-loop research-loop-five" aria-label="World perception to feedback learning loop">
+        <div><span>01</span><strong>World perception</strong><small>Sense the environment</small></div>
+        <i aria-hidden="true">→</i>
+        <div><span>02</span><strong>Human understanding</strong><small>Read needs and risks</small></div>
+        <i aria-hidden="true">→</i>
+        <div><span>03</span><strong>System decision</strong><small>Reason under constraints</small></div>
+        <i aria-hidden="true">→</i>
+        <div><span>04</span><strong>Autonomous action</strong><small>Act in the real world</small></div>
+        <i aria-hidden="true">→</i>
+        <div><span>05</span><strong>Feedback learning</strong><small>Improve with experience</small></div>
       </div>
     </div>
   </section>
 
   <section class="research-directions section">
     <div class="section-shell">
-      {{ range $index, $item := site.Data.research }}
-        <article class="direction" id="{{ $item.id }}">
+      <div class="section-heading research-themes-heading reveal">
+        <div>
+          <p class="section-kicker">Future research themes</p>
+          <h2>Three directions toward human–physical intelligence symbiosis.</h2>
+        </div>
+        <p>Each direction studies one part of the same closed-loop ecosystem.</p>
+      </div>
+
+      {{ range site.Data.research }}
+        <article class="direction direction-{{ .accent }}" id="{{ .id }}">
           <div class="direction-index reveal">
-            <span>{{ $item.number }}</span>
+            <span>{{ .number }}</span>
+            <p>Theme</p>
           </div>
           <div class="direction-main reveal">
-            <h2>{{ $item.title }}</h2>
-            <p class="direction-subtitle">{{ $item.full_title }}</p>
-            <p>{{ $item.summary }}</p>
+            <p class="direction-label">{{ .title }}</p>
+            <h2>{{ .zh_title }}</h2>
+            <p class="direction-subtitle">{{ .full_title }}</p>
+            <p>{{ .summary }}</p>
+            <p class="direction-cn">{{ .zh_summary }}</p>
           </div>
           <div class="direction-meta reveal">
-            <span>Topics</span>
-            <p>{{ delimit $item.keywords " · " }}</p>
-            <small>Representative work: {{ $item.featured_work }}</small>
-            <a href="{{ printf "publications/?topic=%s" ($item.title | urlquery) | relURL }}">Related publications ↗</a>
+            <span>Research goal</span>
+            <p>{{ .goal }}</p>
+            <span>Focus areas</span>
+            <ul>
+              {{ range .keywords }}<li>{{ . }}</li>{{ end }}
+            </ul>
+            <a href="{{ printf "publications/?topic=%s" (.publication_topic | urlquery) | relURL }}">Related publications ↗</a>
           </div>
         </article>
       {{ end }}
@@ -34,7 +123,7 @@
 
   <section class="page-cta section">
     <div class="section-shell page-cta-inner reveal">
-      <p>Explore the papers, datasets, and systems behind these directions.</p>
+      <p>Explore the papers and systems that inform these future directions.</p>
       <a class="text-link" href="{{ "publications/" | relURL }}">Browse publications <span>↗</span></a>
     </div>
   </section>

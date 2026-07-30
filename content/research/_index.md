@@ -1,4 +1,4 @@
 ---
 title: Research
-description: Four connected research directions for Physical AI that works in the real world.
+description: A long-term research vision for human–physical intelligence symbiosis in the real world.
 ---

@@ -1212,6 +1212,471 @@ body {
   }
 }
 
+/* Research vision refresh */
+.research-vision-hero {
+  min-height: 440px;
+  background:
+    linear-gradient(110deg, rgba(231, 242, 250, 0.96), rgba(248, 251, 253, 0.98)),
+    #eef5fa;
+}
+
+.research-eyebrow {
+  margin: 0;
+  color: #1474c6;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.research-vision-hero h1 {
+  max-width: 780px;
+  margin-top: 26px;
+  font-size: clamp(3.5rem, 7vw, 7.5rem);
+  line-height: 0.94;
+}
+
+.research-vision {
+  padding-bottom: 90px;
+  background: #fff;
+}
+
+.research-vision-grid {
+  display: grid;
+  align-items: center;
+  gap: 72px;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
+}
+
+.research-vision-copy h2 {
+  max-width: 620px;
+  margin: 16px 0 24px;
+  color: #173d5d;
+  font-size: clamp(2rem, 3.8vw, 3.5rem);
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  line-height: 1.06;
+}
+
+.research-vision-copy > p:not(.section-kicker) {
+  max-width: 610px;
+  color: #536675;
+  font-size: 0.97rem;
+}
+
+.research-vision-copy .research-vision-cn {
+  padding-left: 18px;
+  border-left: 2px solid #8fc8ec;
+  color: #315c78;
+  font-size: 0.9rem;
+}
+
+.research-vision-copy .research-human-centered {
+  margin-top: 24px;
+  color: #173d5d;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.research-ecosystem {
+  position: relative;
+  display: grid;
+  min-height: 470px;
+  padding: 30px;
+  border: 1px solid #d6e4ed;
+  background:
+    radial-gradient(circle at center, rgba(20, 119, 199, 0.09), transparent 33%),
+    #f7fafc;
+  box-shadow: 0 18px 50px rgba(18, 61, 101, 0.08);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.research-ecosystem::before,
+.research-ecosystem::after {
+  position: absolute;
+  content: "";
+  background: #bdd6e7;
+}
+
+.research-ecosystem::before {
+  top: 50%;
+  right: 18%;
+  left: 18%;
+  height: 1px;
+}
+
+.research-ecosystem::after {
+  top: 18%;
+  bottom: 18%;
+  left: 50%;
+  width: 1px;
+}
+
+.ecosystem-core {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 190px;
+  height: 124px;
+  align-content: center;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  background: #1477c7;
+  box-shadow: 0 10px 28px rgba(20, 119, 199, 0.22);
+  transform: translate(-50%, -50%);
+}
+
+.ecosystem-core span {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ecosystem-core strong {
+  margin-top: 7px;
+  font-size: 0.84rem;
+  line-height: 1.3;
+}
+
+.ecosystem-node {
+  position: relative;
+  z-index: 2;
+  max-width: 220px;
+  padding: 20px;
+  border: 1px solid #d5e2ec;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.ecosystem-node:nth-of-type(2) {
+  justify-self: start;
+}
+
+.ecosystem-node:nth-of-type(3) {
+  justify-self: end;
+}
+
+.ecosystem-node:nth-of-type(4) {
+  align-self: end;
+  justify-self: start;
+}
+
+.ecosystem-node:nth-of-type(5) {
+  align-self: end;
+  justify-self: end;
+}
+
+.ecosystem-node span {
+  color: #1477c7;
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+}
+
+.ecosystem-node h3 {
+  margin: 11px 0 7px;
+  color: #173d5d;
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+.ecosystem-node p {
+  margin: 0;
+  color: #647b8c;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.research-loop-section {
+  display: block;
+  padding: 74px 0 82px;
+  color: #173d5d;
+  border-top: 1px solid #d8e5ee;
+  border-bottom: 1px solid #d8e5ee;
+  background: #f4f8fc;
+}
+
+.research-loop-heading {
+  align-items: end;
+  margin-bottom: 42px;
+}
+
+.research-loop-heading h2,
+.research-themes-heading h2 {
+  margin: 12px 0 0;
+  color: #173d5d;
+  font-size: clamp(2rem, 3.4vw, 3.15rem);
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.research-loop-heading > p,
+.research-themes-heading > p {
+  max-width: 310px;
+  margin: 0;
+  color: #647b8c;
+  font-size: 0.86rem;
+}
+
+.research-loop-five {
+  display: grid;
+  align-items: center;
+  gap: 15px;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.research-loop-five > div {
+  display: block;
+  min-height: 112px;
+  padding: 18px;
+  border: 1px solid #d5e2ec;
+  background: #fff;
+}
+
+.research-loop-five span {
+  display: block;
+  margin-bottom: 17px;
+  color: #1477c7;
+}
+
+.research-loop-five strong {
+  display: block;
+  color: #173d5d;
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+
+.research-loop-five small {
+  display: block;
+  margin-top: 8px;
+  color: #71818e;
+  font-size: 0.68rem;
+  line-height: 1.3;
+}
+
+.research-loop-five > i {
+  color: #7ba5c1;
+  font-size: 1.2rem;
+}
+
+.research-directions {
+  padding-top: 96px;
+}
+
+.research-themes-heading {
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.direction {
+  grid-template-columns: 64px minmax(0, 1fr) 280px;
+  gap: 38px;
+  padding: 62px 0 70px;
+}
+
+.direction-index span {
+  color: #1477c7;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.direction-index p {
+  margin-top: 8px;
+  color: #8a9aa5;
+  font-size: 0.64rem;
+}
+
+.direction-image {
+  margin-bottom: 30px;
+  border: 1px solid #d5e2ec;
+  background: #f8fafb;
+  overflow: hidden;
+}
+
+.direction-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: contain;
+}
+
+.direction-label {
+  margin: 0 0 8px;
+  color: #1477c7;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.direction-main h2 {
+  max-width: 760px;
+  margin-bottom: 10px;
+  font-size: clamp(1.9rem, 3.3vw, 3.35rem);
+  line-height: 1.13;
+}
+
+.direction-main .direction-subtitle {
+  margin-bottom: 20px;
+}
+
+.direction-main .direction-cn {
+  margin-top: 16px;
+  padding-left: 15px;
+  border-left: 2px solid #d5e2ec;
+  color: #557084;
+  font-size: 0.88rem;
+}
+
+.direction-meta {
+  padding-top: 82px;
+}
+
+.direction-meta > span {
+  display: block;
+  margin-top: 18px;
+}
+
+.direction-meta > span:first-child {
+  margin-top: 0;
+}
+
+.direction-meta > p {
+  margin: 10px 0 26px;
+  color: #536675;
+  font-size: 0.83rem;
+}
+
+.direction-meta ul {
+  margin: 10px 0 26px;
+}
+
+.direction-meta li {
+  padding: 7px 0;
+}
+
+.direction-green .direction-index span,
+.direction-green .direction-label {
+  color: #4e9561;
+}
+
+.direction-orange .direction-index span,
+.direction-orange .direction-label {
+  color: #df7b2d;
+}
+
+@media (max-width: 920px) {
+  .research-vision-grid {
+    gap: 42px;
+    grid-template-columns: 1fr;
+  }
+
+  .research-ecosystem {
+    max-width: 800px;
+  }
+
+  .research-loop-five {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .research-loop-five > i {
+    display: none;
+  }
+
+  .research-loop-five > div {
+    min-height: 132px;
+  }
+
+  .direction {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+
+  .direction-meta {
+    grid-column: 2;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .research-vision-hero {
+    min-height: 340px;
+  }
+
+  .research-vision-hero h1 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+  }
+
+  .research-vision {
+    padding-bottom: 54px;
+  }
+
+  .research-ecosystem {
+    min-height: 390px;
+    padding: 16px;
+  }
+
+  .ecosystem-core {
+    width: 150px;
+    height: 106px;
+    padding: 14px;
+  }
+
+  .ecosystem-node {
+    max-width: 150px;
+    padding: 13px;
+  }
+
+  .ecosystem-node h3 {
+    font-size: 1rem;
+  }
+
+  .ecosystem-node p {
+    font-size: 0.68rem;
+  }
+
+  .research-loop-section {
+    padding: 54px 0;
+  }
+
+  .research-loop-heading,
+  .research-themes-heading {
+    display: block;
+  }
+
+  .research-loop-heading > p,
+  .research-themes-heading > p {
+    margin-top: 16px;
+  }
+
+  .research-loop-five {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .research-loop-five > div {
+    min-height: 0;
+  }
+
+  .direction {
+    padding: 40px 0;
+    grid-template-columns: 30px minmax(0, 1fr);
+  }
+
+  .direction-image {
+    margin-bottom: 22px;
+  }
+
+  .direction-meta {
+    padding-left: 18px;
+  }
+}
+
 /*
  * Editorial refinement
  * A quieter, type-led system for a maintainable academic group website.

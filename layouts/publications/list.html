@@ -40,7 +40,9 @@
           <span>Topic</span>
           <select data-pub-topic>
             <option value="">All topics</option>
-            {{ range site.Data.research }}<option value="{{ .title }}">{{ .title }}</option>{{ end }}
+            {{ $topics := slice }}
+            {{ range $publications }}{{ if not (in $topics .topic) }}{{ $topics = $topics | append .topic }}{{ end }}{{ end }}
+            {{ range $topics }}<option value="{{ . }}">{{ . }}</option>{{ end }}
           </select>
         </label>
       </div>
