@@ -2,7 +2,7 @@
 title: Yinuo Chen
 description: Yinuo Chen is pursuing a bachelor's degree at SCUT and serves as a Research Assistant at HKUST(GZ).
 group: ra
-weight: 100
+weight: 10
 role: Research Assistant
 position: Research Assistant
 affiliation: PAIRS Lab, HKUST(GZ)

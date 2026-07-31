@@ -2,7 +2,7 @@
 title: Ruipeng Yang
 description: Ruipeng Yang is a Research Assistant at PAIRS Lab, HKUST(GZ).
 group: ra
-weight: 100
+weight: 20
 role: Research Assistant
 position: Research Assistant
 affiliation: PAIRS Lab, HKUST(GZ)

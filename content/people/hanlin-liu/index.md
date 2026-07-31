@@ -2,7 +2,7 @@
 title: Hanlin Liu
 description: Hanlin Liu is a Research Assistant at PAIRS Lab, HKUST(GZ).
 group: ra
-weight: 100
+weight: 30
 role: Research Assistant
 position: Research Assistant
 affiliation: PAIRS Lab, HKUST(GZ)
