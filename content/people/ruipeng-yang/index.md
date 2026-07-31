@@ -6,7 +6,7 @@ weight: 20
 role: Research Assistant
 position: Research Assistant
 affiliation: PAIRS Lab, HKUST(GZ)
-institution: Shenzhen University
+institution: SZU
 period: 2026–Present
 image: portrait.jpg
 links:
