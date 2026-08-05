@@ -39,6 +39,38 @@
     });
   }
 
+  const researchVideos = Array.from(document.querySelectorAll("[data-research-video]"));
+  if (researchVideos.length) {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const videoObserver = "IntersectionObserver" in window
+      ? new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting && !reducedMotion.matches && !document.hidden) {
+              video.play().catch(() => {});
+            } else {
+              video.pause();
+            }
+          });
+        }, { rootMargin: "120px 0px", threshold: 0.12 })
+      : null;
+
+    researchVideos.forEach((video) => {
+      if (reducedMotion.matches) {
+        video.pause();
+        video.currentTime = 0;
+      } else if (videoObserver) {
+        videoObserver.observe(video);
+      }
+    });
+
+    document.addEventListener("visibilitychange", () => {
+      researchVideos.forEach((video) => {
+        if (document.hidden || reducedMotion.matches) video.pause();
+      });
+    });
+  }
+
   const publicationList = document.querySelector("[data-publication-list]");
   if (!publicationList) return;
 

@@ -41,7 +41,7 @@
       <div class="section-heading reveal">
         <div>
           <p class="section-kicker">Research agenda</p>
-          <h2>Three questions for physical intelligence.</h2>
+          <h2>Four connected programs for physical intelligence.</h2>
         </div>
         <a class="text-link" href="{{ "research/" | relURL }}">Overview <span>↗</span></a>
       </div>
@@ -52,7 +52,7 @@
           <article class="research-media-card research-media-{{ $media.id }} reveal">
             <div class="research-media-visual">
               {{ with $media.media_file }}
-                <video class="research-media-video" autoplay muted loop playsinline preload="metadata" poster="{{ $media.poster | relURL }}" aria-label="{{ $media.media_alt }}">
+                <video class="research-media-video" data-research-video autoplay muted loop playsinline preload="metadata" poster="{{ $media.poster | relURL }}" aria-label="{{ $media.media_alt }}">
                   <source src="{{ . | relURL }}" type="video/mp4">
                 </video>
               {{ else }}

@@ -1,23 +1,23 @@
-- id: world
-  number: "01"
-  title: World–Physical Intelligence
+- id: robust-autonomy
   media_file: media/research/world-sensing-seedance-v2.mp4
-  poster: images/physical-ai-lab.jpg
-  media_label: "Open-world sensing"
-  media_alt: "A mobile robot navigating mud, fog, rain, and obstacles in a severe outdoor environment."
+  poster: images/research/world-sensing-seedance-v2-poster.webp
+  media_label: Challenging environments
+  media_alt: A rugged mobile robot navigating a muddy road in fog and standing water.
 
-- id: human
-  number: "02"
-  title: Human–Physical Intelligence
+- id: human-sensing
   media_file: media/research/human-interaction.mp4
-  poster: images/pairs-hero-background.jpg
-  media_label: "Human understanding"
-  media_alt: "A researcher interacting with a robotic system."
+  poster: images/research/human-interaction-poster.webp
+  media_label: Human-centered sensing
+  media_alt: Researchers interacting with a robotic arm through hand gestures in a laboratory.
 
-- id: systems
-  number: "03"
-  title: Physical Intelligence Systems
+- id: embodied-autonomy
   media_file: media/research/mobile-manipulation.mp4
-  poster: images/research/physical-ai-ecosystem-v2.png
-  media_label: "Long-horizon autonomy"
-  media_alt: "A mobile manipulator operating in a physical environment."
+  poster: images/research/mobile-manipulation-poster.webp
+  media_label: Embodied autonomy
+  media_alt: A mobile manipulator picking and placing objects at a workbench.
+
+- id: scalable-physical-ai
+  media_file: media/research/editorial/homepage-physical-world-synthesis.mp4
+  poster: images/research/homepage-physical-world-synthesis-poster.webp
+  media_label: World models and scale
+  media_alt: A robotic arm in front of synchronized displays showing diverse physical simulations.
