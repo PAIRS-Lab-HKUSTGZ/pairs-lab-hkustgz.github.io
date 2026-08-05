@@ -1,0 +1,24 @@
+---
+title: Yanjing Huang
+description: Yanjing Huang is a Research Assistant at PAIRS Lab, HKUST(GZ).
+group: ra
+weight: 70
+role: Research Assistant
+position: Research Assistant
+affiliation: PAIRS Lab, HKUST(GZ)
+institution: HKUST(GZ)
+period: 2026–Present
+image: portrait.jpg
+links:
+  - label: Email
+    url: mailto:yhuang403@hkust-gz.edu.cn
+research_interests:
+  - title: Swarm robotics
+  - title: Vision-tactile perception and learning
+  - title: Reinforcement learning for robotic systems
+card_interests:
+  - Swarm robotics
+  - Vision-tactile perception and learning
+---
+
+Yanjing Huang is currently pursuing the MPhil degree in Robotics and Autonomous Systems at The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China. She is also serving as a Research Assistant at PAIRS Lab, The Hong Kong University of Science and Technology (Guangzhou). Her research interests include swarm robotics, vision-tactile learning, and reinforcement learning for robot manipulation and autonomous systems.
