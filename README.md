@@ -6,7 +6,7 @@ Website for the Physical AI and Robotic Systems Laboratory at HKUST(GZ), built w
 
 The site is deployed automatically with GitHub Pages:
 
-https://pairs-lab-hkustgz.github.io/
+https://pairslab.github.io/
 
 ## Local preview
 

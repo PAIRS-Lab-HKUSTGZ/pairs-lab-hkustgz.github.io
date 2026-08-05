@@ -1,4 +1,4 @@
-module github.com/PAIRS-Lab-HKUSTGZ/pairs-lab-hkustgz.github.io
+module github.com/pairslab/pairslab.github.io
 
 go 1.15
 
