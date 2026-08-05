@@ -1,10 +1,10 @@
 ---
 title: Yanjing Huang
-description: Yanjing Huang is a Research Assistant at PAIRS Lab, HKUST(GZ).
-group: ra
-weight: 70
-role: Research Assistant
-position: Research Assistant
+description: Yanjing Huang is an MPhil Student at PAIRS Lab, HKUST(GZ).
+group: mphil
+weight: 30
+role: MPhil Student
+position: MPhil Student
 affiliation: PAIRS Lab, HKUST(GZ)
 institution: HKUST(GZ)
 period: 2026–Present
